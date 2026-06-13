@@ -1,0 +1,30 @@
+:root {
+    --primary: #6366f1;
+    --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+body { background: #0f172a; color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 20px; }
+.container { max-width: 600px; margin: 0 auto; }
+.hero { padding: 40px 0; }
+.hero h1 { color: #818cf8; }
+
+.glass {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.swiper { width: 100%; height: 350px; background: #000; border-radius: 15px; }
+
+/* CONTAIN ka matlab hai poori image dikhegi, katega nahi */
+.swiper-slide img, .swiper-slide video {
+    width: 100%; height: 100%; object-fit: contain;
+}
+
+.swiper-button-next, .swiper-button-prev { color: var(--primary) !important; }
+.social-links { margin-top: 30px; font-size: 1.8rem; }
+.social-links a { color: white; margin: 0 15px; }
+.btn-shine { display: inline-block; padding: 12px 30px; background: var(--primary); color: white; border-radius: 50px; text-decoration: none; }
